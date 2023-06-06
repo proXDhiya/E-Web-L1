@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+header > nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header > nav > ul {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+header > nav > ul > li > a {
+    color: #fff;
+}
+
+header > nav > ul > li > a:hover {
+    color: #ccc;
+}
+
+#login {
+    grid-column: 3 / 4;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+form > label {
+    display: block;
+}
+
+form > input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+form > input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.page404 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page404 > img {
+    width: 100%;
+}
